@@ -1,0 +1,107 @@
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --font-size: 18px;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  max-width: 350px;
+
+  .main-img {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .text {
+    margin-left: 1.5rem;
+  }
+
+  .text h1 {
+    font-size: calc(var(--font-size) * 1.2);
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: -12px;
+  }
+
+  .text p {
+    color: var(--soft-blue);
+    width: 18rem;
+    font-size: var(--font-size)
+  }
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  div {
+    display: flex;
+    gap: 6px;
+  }
+
+  .price {
+    color: var(--cyan);
+  }
+
+  .time {
+    color: var(--soft-blue);
+  }
+}
+
+hr {
+  border: 1px solid var(--line);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+ margin-left: 1.5rem;
+  img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  p {
+    color: var(--soft-blue);
+    span {
+      color: #fff;
+    }
+  }
+  padding-bottom: 1rem;
+}
